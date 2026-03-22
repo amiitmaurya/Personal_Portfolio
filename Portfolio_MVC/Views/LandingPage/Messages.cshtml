@@ -1,0 +1,375 @@
+﻿@model IEnumerable<Portfolio_MVC.Models.Contact_me>
+@{
+    ViewBag.Title = "Messages";
+}
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from p.w3layouts.com/demos_new/template_demo/06-01-2018/glance_design_dashboard-demo_Free/215073379/web/500.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Oct 2025 08:05:42 GMT -->
+<head>
+    <title>Portfolio_Amit</title>
+   
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+    @*Favicons*@
+    <link href="@Url.Content("~/Content/img/favicon.png")" rel="icon" />
+    <link href="@Url.Content("~/Content/img/apple-touch-icon.png")" rel="apple-touch-icon" />
+
+    <!-- Bootstrap Core CSS -->
+
+    <link href="~/Admin_assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+    <!-- Custom CSS -->
+    <link href="~/Admin_assets/css/style.css" rel='stylesheet' type='text/css' />
+
+    <!-- font-awesome icons CSS -->
+    <link href="~/Admin_assets/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons CSS -->
+    <!-- side nav css file -->
+    <link href='~/Admin_assets/css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css' />
+    <!-- side nav css file -->
+    <!-- js-->
+    <script src="~/Admin_assets/js/jquery-1.11.1.min.js"></script>
+    <script src="~/Admin_assets/js/modernizr.custom.js"></script>
+
+    <!--webfonts-->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <!--//webfonts-->
+    <!-- Metis Menu -->
+    <script src="~/Admin_assets/js/metisMenu.min.js"></script>
+    <script src="~/Admin_assets/js/custom.js"></script>
+    <link href="~/Admin_assets/css/custom.css" rel="stylesheet">
+    <!--//Metis Menu -->
+
+</head>
+<body class="cbp-spmenu-push">
+    <div class="main-content">
+        <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+            <!--left-fixed -navigation-->
+            <aside class="sidebar-left">
+                <nav class="navbar navbar-inverse">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1><a class="navbar-brand" href="~/Contact/Index"><span class="fa fa-area-chart"></span> Amit <span class="dashboard_text">dashboard</span></a></h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="sidebar-menu">
+                            <li class="header">MAIN NAVIGATION</li>
+                            <li class="treeview">
+                                <a href="~/LandingPage/Dashboard">
+                                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="fa fa-laptop"></i>
+                                    <span>Menu</span>
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="~/LandingPage/Messages"><i class="fa fa-angle-right"></i> Message</a></li>
+                                    <li><a href="media.html"><i class="fa fa-angle-right"></i> Media Css</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </aside>
+        </div>
+        <!--left-fixed -navigation-->
+        <!---728x90--->
+        <!-- header-starts -->
+        <div class="sticky-header header-section ">
+            <div class="header-left">
+
+                <!--toggle button start-->
+                <button id="showLeftPush"><i class="fa fa-bars"></i></button>
+                <!--toggle button end-->
+                <div class="profile_details_left">
+                    <!--notifications of menu start -->
+
+                </div>
+                <!--notification menu end -->
+
+            </div>
+            <div class="header-right">
+
+
+
+
+                <div class="profile_details">
+                    <ul>
+                        <li class="dropdown profile_details_drop">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="profile_img">
+                                    <span class="prfil-img"><img src="~/Admin_assets/images/2.jpg" alt=""> </span>
+                                    <div class="user-name">
+                                        <p>Amit Maurya</p>
+                                        <span>Administrator</span>
+                                    </div>
+                                    <i class="fa fa-angle-down lnr"></i>
+                                    <i class="fa fa-angle-up lnr"></i>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu drp-mnu">
+                                <li> <a href="~/ChangePassword/ChangePassword"><i class="fa fa-cog"></i>Change Password</a> </li>
+                                @*<li> <a href="#"><i class="fa fa-user"></i> My Account</a> </li>
+                                <li> <a href="#"><i class="fa fa-suitcase"></i> Profile</a> </li>*@
+                                <li> <a href="@Url.Action("Logout", "Login")"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- //header-ends -->
+        <!---728x90--->
+        <!-- main content start-->
+        <div id="page-wrapper">
+         
+
+                <div class="main-page">
+                    <div class="col-md-12 widget-shadow">
+                        <div class="panel-default">
+                            <div class="panel-default">
+
+                                <p style="
+                                 text-align:center;
+                                 font-size:26px;
+                                 font-weight:700;
+                                 margin:20px 0;
+                                ">
+                                    📩 Messages
+                                </p>
+                                <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
+                                    <form method="get" action="@Url.Action("Messages")">
+                                        <input type="hidden" name="page" value="1" />
+
+                                        <label style="margin-right:5px;">Show</label>
+
+                                        <select name="pageSize"
+                                                onchange="this.form.submit()"
+                                                class="form-control"
+                                                style="width:120px; display:inline-block;">
+                                            <option value="10" @(ViewBag.PageSize == 10 ? "selected" : "")>10</option>
+                                            <option value="25" @(ViewBag.PageSize == 25 ? "selected" : "")>25</option>
+                                            <option value="50" @(ViewBag.PageSize == 50 ? "selected" : "")>50</option>
+                                            <option value="100" @(ViewBag.PageSize == 100 ? "selected" : "")>100</option>
+
+                                        </select>
+
+                                        <span style="margin-left:5px;">records</span>
+                                    </form>
+                                </div>
+                                @using (Html.BeginForm("DeleteSelected", "LandingPage", FormMethod.Post))
+                                {
+                                    <input type="hidden" name="pageSize" value="@ViewBag.PageSize" />
+                                    <input type="hidden" name="page" value="@ViewBag.CurrentPage" />
+                                    @* EMPTY STATE *@
+                                    if (Model == null || !Model.Any())
+                                    {
+                                        <div style="
+                                      margin: 30px auto;
+                                      padding: 35px 20px;
+                                      max-width: 900px;
+                                      background: linear-gradient(135deg,#fff6d6,#fff);
+                                       border: 1px solid #ffe08a;
+                                       border-radius: 10px;
+                                       text-align: center;
+                                       box-shadow: 0 4px 12px rgba(0,0,0,0.05);  ">
+                                            <div style="font-size:46px;">📭</div>
+                                            <h4 style="margin:10px 0;color:#856404;">
+                                                No Messages Found
+                                            </h4>
+                                            <p style="color:#6c757d;margin:0;">
+                                                New messages will appear here automatically.
+                                            </p>
+                                        </div>
+                                    }
+                                    else
+                                    {
+
+                                        <table class="table table-bordered table-striped table-hover">
+                                            <thead class="bg-dark text-white">
+                                                <tr>
+                                                    <th>
+                                                        <input type="checkbox" id="selectAll" />
+                                                    </th>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Subject</th>
+                                                    <th>Message</th>
+                                                    <th>Date</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                @foreach (var item in Model)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox"
+                                                                   name="selectedEmails"
+                                                                   value="@item.Email" />
+                                                        </td>
+                                                        <td>@item.Name</td>
+                                                        <td>@item.Email</td>
+                                                        <td>@item.Subject</td>
+                                                        <td>@item.Message</td>
+                                                        <td>@item.InsertDate</td>
+                                                        <td>
+                                                            @Html.ActionLink("Delete", "Delete", "LandingPage", new
+                                                                {
+                                                                    email = item.Email,
+                                                                    page = ViewBag.CurrentPage,
+                                                                    pageSize = ViewBag.PageSize
+                                                                     },
+                                                                new
+                                                                {
+                                                                    @class = "btn btn-danger btn-sm",
+                                                                    onclick = "return confirm('Delete this message?');"
+                                                                })
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+
+                                        <button type="submit"
+                                                class="btn btn-danger mb-3"
+                                                onclick="return confirm('Delete selected messages?');">
+                                            🗑 Delete Selected
+                                        </button>
+
+                                        <!-- 🔹 PAGINATION -->
+
+
+                                        <nav style="text-align:center;">
+                                            <ul class="pagination justify-content-center">
+
+                                                @if (ViewBag.CurrentPage > 1)
+                                                {
+                                                    <li class="page-item">
+                                                        <a class="page-link"
+                                                           href="@Url.Action("Messages", new {
+                                                      page = ViewBag.CurrentPage - 1,
+                                                      pageSize = ViewBag.PageSize
+                                                  })">  < </a>
+                                                    </li>
+                                                }
+
+                                                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                                                {
+                                                    <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                                                        <a class="page-link"
+                                                           href="@Url.Action("Messages", new {
+                                                          page = i,
+                                                         pageSize = ViewBag.PageSize
+                                                       })">
+                                                            @i
+                                                        </a>
+                                                    </li>
+                                                }
+
+                                                @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                                                {
+                                                    <li class="page-item">
+                                                        <a class="page-link"
+                                                           href="@Url.Action("Messages", new {
+                                                       page = ViewBag.CurrentPage + 1,
+                                                       pageSize = ViewBag.PageSize
+                                                      })">  >  </a>
+                                                    </li>
+                                                }
+
+                                            </ul>
+                                        </nav>
+
+
+                                    }
+                                }
+
+                                <script>
+                                    document.getElementById("selectAll")?.addEventListener("change", function () {
+                                        var boxes = document.getElementsByName("selectedEmails");
+                                        for (var i = 0; i < boxes.length; i++) {
+                                            boxes[i].checked = this.checked;
+                                        }
+                                    });
+                                </script>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <!---728x90--->
+        <!--footer-->
+        <div class="footer">
+
+        </div>
+        <!--//footer-->
+    </div>
+
+    <!-- side nav js -->
+    <script src='~/Admin_assets/js/SidebarNav.min.js' type='text/javascript'></script>
+    <script>
+        $('.sidebar-menu').SidebarNav()
+    </script>
+    <!-- //side nav js -->
+    <!-- Classie --><!-- for toggle left push menu script -->
+    <script src="~/Admin_assets/js/classie.js"></script>
+    <script>
+        var menuLeft = document.getElementById('cbp-spmenu-s1'),
+            showLeftPush = document.getElementById('showLeftPush'),
+            body = document.body;
+
+        showLeftPush.onclick = function () {
+            classie.toggle(this, 'active');
+            classie.toggle(body, 'cbp-spmenu-push-toright');
+            classie.toggle(menuLeft, 'cbp-spmenu-open');
+            disableOther('showLeftPush');
+        };
+
+        function disableOther(button) {
+            if (button !== 'showLeftPush') {
+                classie.toggle(showLeftPush, 'disabled');
+            }
+        }
+    </script>
+    <!-- //Classie --><!-- //for toggle left push menu script -->
+    <!--scrolling js-->
+    <script src="~/Admin_assets/js/jquery.nicescroll.js"></script>
+    <script src="~/Admin_assets/js/scripts.js"></script>
+    <!--//scrolling js-->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Admin_assets/js/bootstrap.js"></script>
+
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'98b421fd4fc4e1ec',t:'MTc1OTkxMDcyMg=='};var a=document.createElement('script');a.src='../../../../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/16f9cd2f90a6/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+<!-- Mirrored from p.w3layouts.com/demos_new/template_demo/06-01-2018/glance_design_dashboard-demo_Free/215073379/web/500.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Oct 2025 08:05:42 GMT -->
+</html>
+

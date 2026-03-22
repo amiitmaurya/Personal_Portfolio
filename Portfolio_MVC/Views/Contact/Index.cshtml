@@ -1,0 +1,1037 @@
+﻿@*@model IEnumerable<Portfolio_MVC.Models.Contact_me>*@
+@model Portfolio_MVC.Models.Contact_me
+
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio_Amit</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    @*Favicons*@
+    <link href="@Url.Content("~/Content/img/favicon.png")" rel="icon" />
+    <link href="@Url.Content("~/Content/img/apple-touch-icon.png")" rel="apple-touch-icon" />
+
+    @*Fonts*@
+
+    <link href="@Url.Content("https://fonts.googleapis.com")" rel="preconnect" />
+    <link href="@Url.Content("https://fonts.gstatic.com")" rel="preconnect">
+    <link href="@Url.Content("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap")"
+          rel="stylesheet" />
+
+    @*Vendor CSS Files*@
+
+
+    <link href="@Url.Content("~/Content/vendor/bootstrap/css/bootstrap.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/vendor/bootstrap-icons/bootstrap-icons.css")" rel="stylesheet" />
+    <link rel="stylesheet"
+          href="@Url.Content("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css")">
+
+    <link href="@Url.Content("~/Content/vendor/aos/aos.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/vendor/glightbox/css/glightbox.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/vendor/swiper/swiper-bundle.min.css")" rel="stylesheet" />
+
+    @*Main CSS File*@
+    <link href="@Url.Content("~/content/css/main.css")" rel="stylesheet" />
+
+
+
+</head>
+<body class="index-page">
+    <div id="form1">
+        <div>
+            <header id="header" class="header dark-background d-flex flex-column">
+                <i class="header-toggle d-xl-none bi bi-list"></i>
+
+                <div class="profile-img">
+                    <img src="@Url.Content("~/Content/img/profile.jpg")" alt="" class="img-fluid rounded-circle"
+                         id="Profile_pix" />
+                </div>
+
+                <a href="@Url.Content("~/LandingPage/Messages")" class="logo d-flex align-items-center justify-content-center">
+                    @*Uncomment the line below if you also wish to use an image logo*@
+                    @*<img src="~/assets/img/logo.png" alt="">*@
+                    <h1 class="sitename" id="Profile_text">Amit Kumar Maurya</h1>
+                </a>
+
+                <div class="social-links text-center">
+                    <a href="@Url.Content("https://x.com/Amit_maury_?t=XDPdJIc6AI4-AxNdhZ_WRg&s=08 ")" rel="noopener noreferrer"
+                       target="_blank" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="@Url.Content("https://www.facebook.com/share/14MeUArZZFV/")" rel="noopener noreferrer"
+                       target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="@Url.Content("https://www.instagram.com/amit_._maurya?igsh=MTlrbjV1MWh3d2QycA==")" rel="noopener noreferrer"
+                       target="_blank" class="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="@Url.Content("https://teams.microsoft.com/l/chat/0/0?users=live:.cid.27c443465b84a8ae")"
+                       class="teams" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-microsoft-teams"></i>
+                    </a>
+                    <a href="@Url.Content("https://www.linkedin.com/in/amit-mauryaa")" rel="noopener noreferrer"
+                       target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+                        <li><a href="#about"><i class="bi bi-person navicon"></i>About</a></li>
+                        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
+                        <li><a href="#portfolio"><i class="bi bi-images navicon"></i>Project</a></li>
+                        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i>Services</a></li>
+                        <li><a href="#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <main class="main">
+
+                @*Hero Section*@
+                <section id="hero" class="hero section dark-background">
+
+                    <img src="@Url.Content("~/Content/img/background.jpg")" alt="" data-aos="fade-in" class="" id="Cover_pix" />
+
+                    <div class="container" data-aos="fade-up" data-aos-delay="100">
+                        <h2 id="Cover_text">Amit Kumar Maurya</h2>
+                        <p>
+                            I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer" id="blinker"></span>
+                        </p>
+                    </div>
+
+                </section>
+                @*/Hero Section*@
+                @*About Section*@
+                <section id="about" class="about section">
+
+                    @*Section Title*@
+                    <div class="container section-title" data-aos="fade-up">
+                        <h2>About</h2>
+                        <p id="Profession_summary">
+                            I am a passionate and detail-oriented .NET Developer with hands-on experience in
+                            designing, developing, and maintaining web applications using ASP.NET,MVC, C#, ADO.NET,
+                            and SQL Server. I have a solid understanding of the software development life cycle
+                            (SDLC) and a keen interest in building efficient, user-friendly, and scalable solutions.
+                        </p>
+                    </div>
+                    @*End Section Title*@
+
+                    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-4">
+                                <img src="@Url.Content("~/Content/img/Profile.jpg")" class="img-fluid" alt="" id="profile2" />
+                            </div>
+                            <div class="col-lg-8 content">
+                                <h2 id="profession"> .NET Developer</h2>
+                                <p class="fst-italic py-3" id="Profession_summary1">
+                                    Passionate .NET Developer with hands-on experience in building responsive and data-driven
+                                    web applications using ASP.NET, MVC, C#, ADO.NET, and SQL Server. Skilled in front-end
+                                    technologies (HTML, CSS, JavaScript, Bootstrap) and database integration. Focused
+                                    on writing clean, efficient code and delivering reliable solutions.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <ul>
+
+                                            <li id="Social_id">
+                                                <i class="bi bi-chevron-right"></i><strong>Linkedln:</strong>
+                                                <span>/amit-mauryaa</span>
+                                            </li>
+                                            <li id="Phone">
+                                                <i class="bi bi-chevron-right"></i><strong>Phone:</strong>
+                                                <span>+917428409883</span>
+                                            </li>
+                                            <li id="City">
+                                                <i class="bi bi-chevron-right"></i><strong>City:</strong>
+                                                <span>
+                                                    Gorakhpur, Uttar
+                                                    Pradesh
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul>
+
+                                            <li id="Degree">
+                                                <i class="bi bi-chevron-right"></i><strong>Degree:</strong>
+                                                <span>
+                                                    Master of Computer
+                                                    Application
+                                                </span>
+                                            </li>
+                                            <li id="Gmail">
+                                                <i class="bi bi-chevron-right"></i><strong>Email:</strong>
+                                                <span>amitmaury921@gmail.com</span>
+                                            </li>
+                                            <li id="Availability">
+                                                <i class="bi bi-chevron-right"></i><strong>Freelance:</strong>
+                                                <span>Available</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="py-3" id="Profession_summary2">
+                                    I enjoy solving technical challenges, writing clean code, and continuously improving my skills. I’m passionate about building efficient solutions that make an impact and eager to grow as a developer in a collaborative environment. I also value learning from peers, adapting to new technologies, and contributing meaningfully to real-world projects while maintaining quality, performance, reliability, teamwork, communication, consistency.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                @*/About Section*@
+
+                @*Skills Section*@
+                <section id="skills" class="skills section light-background">
+
+                    @*Section Title*@
+                    <div class="container section-title" data-aos="fade-up">
+                        <h2>Skills</h2>
+                        <p id="info">
+                            Proficient in ASP.NET, C#, ADO.NET, SQL Server, HTML, CSS, JavaScript, andBootstrap
+                            with a strong focus on building responsive, data-driven web applications.
+                        </p>
+                    </div>
+                    @*End Section Title*@
+
+                    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="row skills-content skills-animation">
+
+                            <div class="col-lg-6">
+
+                                <div class="progress">
+                                    <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Skills Item*@
+
+                                <div class="progress">
+                                    <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Skills Item*@
+
+                                <div class="progress">
+                                    <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Skills Item*@
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="progress">
+                                    <span class="skill"><span>ASP.NET</span> <i class="val">80%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Skills Item*@
+
+                                <div class="progress">
+                                    <span class="skill"><span>SQL</span> <i class="val">70%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Skills Item*@
+
+                                <div class="progress">
+                                    <span class="skill"><span>#C</span> <i class="val">55%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Skills Item*@
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+                @*/Skills Section*@
+                @*Resume Section*@
+                <section id="resume" class="resume section">
+
+                    @*Section Title*@
+                    <div class="container section-title" data-aos="fade-up">
+                        <h2>Resume</h2>
+                        <p id="Regarding">
+                            Passionate Backend Developer with 2+ years of experience in software testing and
+                            quality assurance, now transitioning into backend development to build reliable,
+                            secure, and efficient applications. My background in QA has given me a strong eye
+                            for detail, debugging skills, and a deep understanding of the software development
+                            lifecycle.
+
+                        </p>
+                    </div>
+                    @*End Section Title*@
+
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                <h3 class="resume-title">Sumary</h3>
+
+                                <div class="resume-item pb-0">
+                                    <h4 id="Designation">.NET Developer Intern</h4>
+                                    <p>
+                                        <em id="Position_summary">
+                                            Motivated .NET Developer Intern with over 2
+                                            years of experience in software testing.
+                                            Skilled in developing and testing web applications using ASP.NET, C#, and SQL Server.
+                                            Passionate about delivering reliable, high-quality solutions within deadlines.
+                                        </em>
+                                    </p>
+                                    <ul>
+                                        <li id="Address">Gorakhpur Uttar Pradesh</li>
+                                        <li id="Mbo">+917428409883</li>
+                                        <li id="mail">amitmaury921@gmail.com</li>
+                                    </ul>
+                                </div>
+                                @*Edn Resume Item*@
+
+                                <h3 class="resume-title">Education</h3>
+                                <div class="resume-item">
+                                    <h4 id="Higher_edu">Master of Computer Application</h4>
+                                    <h5 id="High_edu_duration">2023-2025</h5>
+                                    <p><em id="High_university">J.S. University, Shikohabad</em></p>
+                                    <ul>
+                                        <li id="High_edu_skil1">
+                                            Developed advanced skills in software engineering,
+                                            data structures, and database
+                                            management systems.
+                                        </li>
+                                        <li id="High_edu_skil2">
+                                            Focused on software development, database management,
+                                            and web technologies.
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                @*Edn Resume Item*@
+
+                                <div class="resume-item">
+                                    <h4 id="Graduation">Bachelor of Computer Application</h4>
+                                    <h5 id="Graduation_duration">2018 - 2021</h5>
+                                    <p>
+                                        <em id="Graduation_clz">Deen Dayal Upaydhyay, Gorakhpur, University</em>
+                                    </p>
+                                    <ul>
+                                        <li id="Graduation_skil1">
+                                            Specialized in programming, web development,
+                                            and database management.
+                                        </li>
+                                        <li id="Graduation_skil2">
+                                            Gained strong foundational knowledge in C,
+                                            C++, Java, and SQL.
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                @*Edn Resume Item*@
+
+                            </div>
+
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="resume-title">Professional Experience</h3>
+                                <div class="resume-item">
+                                    <h4 id="Current_job_position">.NET Developer Intern</h4>
+                                    <h5 id="Current_job_duration">Sept 2025 - Present</h5>
+                                    <p><em id="Current_job_location">Gorakhpur, Uttar Pradesh </em></p>
+                                    <ul>
+                                        <li id="Current_job_skil1">
+                                            Assisted in developing and maintaining web
+                                            applications using ASP.NET, C#, and SQL
+                                            Server.
+                                        </li>
+                                        <li id="Current_job_skil2">
+                                            Supported the team in debugging, testing,
+                                            and optimizing application performance.
+                                        </li>
+                                        <li id="Current_job_skil3">
+                                            Collaborated with senior developers to design
+                                            responsive UI using HTML, CSS, JavaScript,
+                                            and Bootstrap.
+                                        </li>
+                                        <li id="Current_job_skil4">
+                                            Gained hands-on experience in database integration,
+                                            CRUD operations, and stored
+                                            procedures.
+                                        </li>
+                                    </ul>
+                                </div>
+                                @*Edn Resume Item*@
+
+                                <div class="resume-item">
+                                    <h4 id="Past_job_position">Software Quality Analyst</h4>
+                                    <h5 id="Past_job_duration">June 2023 - Aug 2025</h5>
+                                    <p><em id="Past_job_location">Gurgaon, Haryana</em></p>
+                                    <ul>
+                                        <li id="Past_job_skil1">
+                                            Achieved high defect detection efficiency by
+                                            implementing comprehensive test scenarios,
+                                            leading to significantly improved test coverage.
+                                        </li>
+                                        <li id="Past_job_skil2">
+                                            Led the end-to-end testing process for multiple
+                                            releases, resulting in a noticeable
+                                            reduction in production defects and a smoother user experience.
+                                        </li>
+                                        <li id="Past_job_skil3">
+                                            Developed detailed test plans and test cases
+                                            for complex applications, ensuring
+                                            extensive test coverage using Postman, JIRA, and SQL for API and database validation.
+                                        </li>
+                                        <li id="Past_job_skil4">
+                                            Delivered 7+ projects after successful end-to-end
+                                            testing, ensuring high-quality
+                                            performance and zero critical defects.
+                                        </li>
+                                    </ul>
+                                </div>
+                                @*Edn Resume Item*@
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+                @*/Resume Section*@
+                @*Portfolio Section*@
+                <section id="portfolio" class="portfolio section light-background">
+
+                    @*Section Title*@
+                    <div class="container section-title" data-aos="fade-up">
+                        <h2>Project</h2>
+                        <p>
+                            A collection of web development projects showcasing my ability to design, develop,
+                            and deploy responsive and dynamic web applications. Each project demonstrates proficiency
+                            in ASP.NET, C#, and SQL Server, with a focus on clean architecture, efficient database
+                            design, and user-friendly interfaces.
+                        </p>
+                    </div>
+                    @*End Section Title*@
+
+                    <div class="container">
+
+                        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+
+                            @*End Portfolio Filters*@
+
+                            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/std_reg.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>Student Registration System</h4>
+                                            <p>Add, edit, delete, and view student details.</p>
+                                            
+                                            <a href="@Url.Content("~/Content/img/portfolio/std_reg.png")" title="Student Registration System" data-gallery="portfolio-gallery-app"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/contact_form.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>Contact Form Application</h4>
+                                            <p>Contact us form storing user messages</p>
+                                            <a href="@Url.Content("~/Content/img/portfolio/contact_form.png")" title="Contact Form Application" data-gallery="portfolio-gallery-product"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/login_signup.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>Login & Signup System</h4>
+                                            <p>User registration and authentication system.</p>
+                                            <a href="@Url.Content("~/Content/img/portfolio/login_signup.png")" title="Login & Signup System" data-gallery="portfolio-gallery-branding"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/todo.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>To-Do List Web App</h4>
+                                            <p>Add, update, and delete daily tasks.</p>
+                                            <a href="@Url.Content("~/Content/img/portfolio/todo.png")" title="To-Do List Web App" data-gallery="portfolio-gallery-book"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/feedback.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>Feedback Management System</h4>
+                                            <p>Collect and display user feedback.</p>
+                                            <a href="@Url.Content("~/Content/img/portfolio/feedback.png")" title="Feedback Management System" data-gallery="portfolio-gallery-app"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/library_book_record.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>Library Book Record System</h4>
+                                            <p>Add and view books available in a library.</p>
+                                            <a href="@Url.Content("~/Content/img/portfolio/library_book_record.png")" title="Library Book Record System" data-gallery="portfolio-gallery-product"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/billing.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>Simple Billing System</h4>
+                                            <p>Add product details and calculate total price with GST</p>
+                                            <a href="@Url.Content("~/Content/img/portfolio/billing.png")" title="Simple Billing System" data-gallery="portfolio-gallery-branding"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/emp_info.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>Employee Information System</h4>
+                                            <p>Maintain a list of employees with name, department, and salary.</p>
+                                            <a href="@Url.Content("~/Content/img/portfolio/emp_info.png")" title="Employee Information System" data-gallery="portfolio-gallery-book"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+                                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                                    <div class="portfolio-content h-100">
+                                        <img src="@Url.Content("~/Content/img/portfolio/complain.png")" class="img-fluid" alt="" />
+                                        <div class="portfolio-info">
+                                            <h4>Complaint Management System</h4>
+                                            <p>Users can submit complaints; admin can view and change status.</p>
+                                            <a href="@Url.Content("~/Content/img/portfolio/complain.png")" title="Complaint Management System" data-gallery="portfolio-gallery-app"
+                                               class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @*End Portfolio Item*@
+
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </section>
+                @*/Portfolio Section*@
+                @*Services Section*@
+                <section id="services" class="services section">
+
+                    @*Section Title*@
+                    <div class="container section-title" data-aos="fade-up">
+                        <h2>Services</h2>
+                        <p id="Service_info">
+                            I provide complete web development solutions using ASP.NET, C#, and SQL Server.
+                            From designing responsive user interfaces to building secure backend systems, my
+                            goal is to deliver reliable, fast, and scalable web applications tailored to client
+                            needs.
+                        </p>
+                    </div>
+                    @*End Section Title*@
+
+                    <div class="container">
+
+                        <div class="row gy-4">
+
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                                <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+                                <div>
+                                    <h4 class="title stretched-link" id="service_title1">
+                                        Web Application
+                                        Development
+                                    </h4>
+                                    <p class="description" id="service_description1">
+                                        Building dynamic and scalable web applications using ASP.NET and C#, focused on
+                                        performance, security, and a smooth user experience that adapts to every device.
+                                    </p>
+                                </div>
+                            </div>
+                            @*End Service Item*@
+
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+                                <div>
+                                    <h4 class="title stretched-link" id="service_title2">
+                                        Frontend Design
+                                        & Development
+                                    </h4>
+                                    <p class="description" id="service_description2">
+                                        Creating responsive and visually appealing interfaces with HTML, CSS, JavaScript,
+                                        and Bootstrap — ensuring seamless interaction and elegant design across platforms.
+                                    </p>
+                                </div>
+                            </div>
+                            @*End Service Item*@
+
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+                                <div>
+                                    <h4 class="title stretched-link" id="service_title3">
+                                        Backend Development
+                                    </h4>
+                                    <p class="description" id="service_description3">
+                                        Designing powerful server-side logic and APIs with ASP.NET and C#, ensuring your
+                                        web applications are fast, secure, and capable of handling complex data workflows.
+                                    </p>
+                                </div>
+                            </div>
+                            @*End Service Item*@
+
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                                <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+                                <div>
+                                    <h4 class="title stretched-link" id="service_title4">
+                                        Database Design
+                                        & Integration
+                                    </h4>
+                                    <p class="description" id="service_description4">
+                                        Developing efficient and reliable databases using SQL Server. Expertise in stored
+                                        procedures, normalization, and secure data handling for smooth integration with
+                                        applications.
+                                    </p>
+                                </div>
+                            </div>
+                            @*End Service Item*@
+
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                                <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+                                <div>
+                                    <h4 class="title stretched-link" id="service_title5">
+                                        API Development
+                                        & Integration
+                                    </h4>
+                                    <p class="description" id="service_description5">
+                                        Building and integrating RESTful APIs to connect different systems and platforms,
+                                        enabling smooth data exchange and automation between web and mobile applications.
+                                    </p>
+                                </div>
+                            </div>
+                            @*End Service Item*@
+
+                            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                                <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+                                <div>
+                                    <h4 class="title stretched-link" id="service_title6">
+                                        Website Maintenance
+                                        & Support
+                                    </h4>
+                                    <p class="description" id="service_description6">
+                                        Providing regular updates, bug fixes, performance optimization, and feature enhancements
+                                        to keep your website secure, updated, and running flawlessly.
+                                    </p>
+                                </div>
+                            </div>
+                            @*End Service Item*@
+
+                        </div>
+
+                    </div>
+
+                </section>
+                @*/Services Section*@
+                @*Testimonials Section*@
+                <!--<section id="testimonials" class="testimonials section light-background">-->
+                @*Section Title*@
+                <!--<div class="container section-title" data-aos="fade-up">
+            <h2>Testimonials</h2>
+            <p>
+                Crafted through dedication and precision, each project reflects trust and satisfaction
+                from clients who value quality and performance. From dynamic ASP.NET solutions to
+                seamless database integration, every testimonial stands as proof of my commitment
+                to delivering reliable and innovative web development services.
+            </p>
+        </div>-->
+                @*End Section Title*@
+
+                <!--<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper init-swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>
+                                    Amit delivered an excellent web solution for our business. The design was clean,
+                                    and the functionality worked flawlessly. Communication was smooth throughout the
+                                    project — truly professional work!
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <img src="~/Content/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo &amp; Founder</h4>
+                        </div>
+                    </div>-->
+                @*End testimonial item*@
+
+                <!--<div class="swiper-slide">
+            <div class="testimonial-item">
+                <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>
+                        Working with Amit was a great experience. He has strong technical knowledge of
+                        ASP.NET and SQL Server, and he implemented every requirement with precision and
+                        efficiency.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="~/Content/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+            </div>
+        </div>-->
+                @*End testimonial item*@
+
+                <!--<div class="swiper-slide">
+            <div class="testimonial-item">
+                <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>
+                        Amit understood exactly what I needed and turned my ideas into a beautiful, fully
+                        functional website. His attention to detail and timely delivery were highly impressive.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="~/Content/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+            </div>
+        </div>-->
+                @*End testimonial item*@
+
+                <!--<div class="swiper-slide">
+            <div class="testimonial-item">
+                <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>
+                        “He developed a responsive and secure web application for our client. The code
+                        quality, database design, and UI were all top-notch. Highly recommended for web
+                        development projects.”
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="~/Content/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+            </div>
+        </div>-->
+                @*End testimonial item*@
+
+                <!--<div class="swiper-slide">
+            <div class="testimonial-item">
+                <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>
+                        Professional, reliable, and skilled. Amit handled our project from concept to
+                        deployment with great commitment. The final product exceeded expectations in both
+                        performance and design.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="~/Content/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+            </div>
+        </div>-->
+                @*End testimonial item*@
+
+                <!--</div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </section>-->
+                @*/Testimonials Section
+            Contact Section*@
+                <section id="contact" class="contact section">
+
+                    <!-- Section Title -->
+                    <div class="container section-title" data-aos="fade-up">
+                        <h2>Contact</h2>
+                        <p>
+                            Feel free to reach out for collaborations, project inquiries, or freelance opportunities.
+                            I’m always open to discussing new ideas and turning them into powerful web solutions
+                            built with ASP.NET, C#, and SQL Server.
+                        </p>
+                    </div>
+                    @*End Section Title*@
+
+                    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="row gy-4">
+
+                            <div class="col-lg-5">
+
+                                <div class="info-wrap">
+                                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                                        <a href="https://maps.app.goo.gl/1h49V2Zkcog2jSx98" target="_blank">
+                                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                        </a>
+                                        <div>
+                                            <h3>Address</h3>
+                                            <p>Gorakhpur, Uttar Pradesh</p>
+                                        </div>
+                                    </div>
+                                    @*End Info Item*@
+
+                                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                                        <a href="https://wa.me/7428409883?text=Hi Amit, I found your portfolio and would like to discuss a backend developer opportunity."
+                                           target="_blank">
+                                            <i class="bi bi-telephone flex-shrink-0"></i>
+                                        </a>
+                                        <div>
+                                            <h3>Call Us</h3>
+                                            <p>+91 7428409883 </p>
+                                        </div>
+                                    </div>
+                                    @*End Info Item*@
+
+                                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                                        <a href="mailto:amitmaury921@gmail.com">
+                                            <i class="bi bi-envelope flex-shrink-0"></i>
+                                        </a>
+                                        <div>
+                                            <h3>Email Us</h3>
+                                            <p>amitmaury921@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    @*End Info Item*@
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d113973.47828183127!2d83.30320192350182!3d26.786749061547827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x399145af7aa81bcf%3A0x1b916eaa29eb8004!2snear%20Indian%20Oil%20Petrol%20Pump%2C%20Basharatpur%2C%20Om%20Nagar%2C%20Gorakhpur%2C%20Uttar%20Pradesh%20273003!3m2!1d26.7867729!2d83.3856034!5e0!3m2!1sen!2sin!4v1763024071723!5m2!1sen!2sin"
+                                            frameborder="0" style="border: 0; width: 100%; height: 230px;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7">
+
+                                @using (Html.BeginForm("ContactInsert", "Contact", FormMethod.Post, new
+                                {
+                                    @class = "php-email-form",
+                                    data_aos = "fade-up",
+                                    data_aos_delay = "200"
+                                }))
+                                {
+                                    @Html.AntiForgeryToken()
+
+                                    <div class="row gy-4">
+
+                                        <div class="col-md-6">
+                                            <label for="name-field" class="pb-2">Your Name</label>
+                                            
+                                            @Html.TextBox("Name", null, new { @class = "form-control", required = "required" })
+
+
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="email-field" class="pb-2">Your Email</label>
+                                           
+                                            @Html.TextBox("Email", null, new { @class = "form-control", required = "required" })
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label for="subject-field" class="pb-2">Subject</label>
+                                           
+                                            @Html.TextBox("Subject", null, new { @class = "form-control", required = "required" })
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label for="message-field" class="pb-2">Message</label>
+                                            @*@Html.TextArea("Message")*@
+                                            @Html.TextArea("Message", null, new { @class = "form-control", rows = "10", required = "required" })
+                                        </div>
+
+                                        <div class="col-md-12 text-center">
+                                            <input type="submit" value="Send Message" class="btn-send" />
+                                        </div>
+
+                                    </div>
+
+                                }
+                            </div>
+                            @*End Contact Form*@
+
+                        </div>
+
+                    </div>
+
+                </section>
+                @*/Contact Section*@
+
+            </main>
+
+            <footer id="footer" class="footer position-relative light-background">
+
+                <div class="container">
+                    <div class="copyright text-center ">
+                        <p>
+                            © <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>
+                                All
+                                Rights Reserved
+                            </span>
+                        </p>
+                    </div>
+                    <div class="credits">
+                        @*You can delete the links only if you've purchased the pro version.*@
+                        @*Licensing information: https://bootstrapmade.com/license/*@
+                        <p>
+                            Customized by<a href="Index.cshtml">Amit Maurya</a> | Design by <a href="https://bootstrapmade.com/"
+                                                                                               target="_blank">BootstrapMade</a>
+                        </p>
+                        @*<%-- Designed by <a href="Index.cshtml">Amit Maurya</a>--%>*@
+                    </div>
+                </div>
+
+            </footer>
+
+            @*Scroll Top*@
+            <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-short"></i>
+            </a>
+
+            @*Preloader*@
+            <div id="preloader"></div>
+
+            @*Vendor JS Files*@
+            <script src="@Url.Content("~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js")"></script>
+            @*<script src="@Url.Content("~/Content/vendor/php-email-form/validate.js")"></script>*@
+            <script src="@Url.Content("~/Content/vendor/aos/aos.js")"></script>
+            <script src="@Url.Content("~/Content/vendor/typed.js/typed.umd.js")"></script>
+            <script src="@Url.Content("~/Content/vendor/purecounter/purecounter_vanilla.js")"></script>
+            <script src="@Url.Content("~/Content/vendor/waypoints/noframework.waypoints.js")"></script>
+            <script src="@Url.Content("~/Content/vendor/glightbox/js/glightbox.min.js")"></script>
+            <script src="@Url.Content("~/Content/vendor/imagesloaded/imagesloaded.pkgd.min.js")"></script>
+            <script src="@Url.Content("~/Content/vendor/isotope-layout/isotope.pkgd.min.js")"></script>
+            <script src="@Url.Content("~/Content/vendor/swiper/swiper-bundle.min.js")"></script>
+
+            @*for success message*@
+
+            <script src="@Url.Content("https://cdn.jsdelivr.net/npm/sweetalert2@11")"></script>
+
+            @if (TempData["Success"] != null)
+            {
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        Swal.fire({
+                            toast: true,
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Message sent successfully!',
+                            background: 'rgba(255,255,255,0.7)',
+                            showConfirmButton: false,
+                            timer: 3000
+                        });
+                    });
+                </script>
+            }
+                @if (TempData["Error"] != null)
+                {
+                    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    Swal.fire({
+        toast: true,
+        position: 'top-end',
+        icon: 'error',
+        title: '@TempData["Error"]',
+        showConfirmButton: false,
+        timer: 10000
+    });
+});
+                    </script>
+                }
+
+            @*Main JS File*@
+            <script src="@Url.Content("~/Content/js/main.js")"></script>
+        </div>
+                     </div>
+                    </body>
+                    </html>
+

@@ -1,0 +1,395 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{218010D8-B9A3-4039-A860-2F94BF7A58FA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Portfolio_using_MVC</RootNamespace>
+    <AssemblyName>Portfolio_using_MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44338</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin_assets\css\AjaxLoader.html" />
+    <Content Include="Admin_assets\css\bootstrap.css" />
+    <Content Include="Admin_assets\css\custom.css" />
+    <Content Include="Admin_assets\css\export.css" />
+    <Content Include="Admin_assets\css\font-awesome.css" />
+    <Content Include="Admin_assets\css\grabbing.html" />
+    <Content Include="Admin_assets\css\graph.css" />
+    <Content Include="Admin_assets\css\jqcandlestick.css" />
+    <Content Include="Admin_assets\css\monthly.css" />
+    <Content Include="Admin_assets\css\owl.carousel.css" />
+    <Content Include="Admin_assets\css\SidebarNav.min.css" />
+    <Content Include="Admin_assets\css\style.css" />
+    <Content Include="Admin_assets\fonts\fontawesome-webfont5b62.svg" />
+    <Content Include="Admin_assets\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="Admin_assets\images\1.html" />
+    <Content Include="Admin_assets\images\1.jpg" />
+    <Content Include="Admin_assets\images\2.html" />
+    <Content Include="Admin_assets\images\2.jpg" />
+    <Content Include="Admin_assets\images\3.html" />
+    <Content Include="Admin_assets\images\3.jpg" />
+    <Content Include="Admin_assets\images\4.jpg" />
+    <Content Include="Admin_assets\images\dashboard.jpg" />
+    <Content Include="Admin_assets\images\divice-pagenations.html" />
+    <Content Include="Admin_assets\images\i1.png" />
+    <Content Include="Admin_assets\images\i2.png" />
+    <Content Include="Admin_assets\images\i3.png" />
+    <Content Include="Admin_assets\images\i4.png" />
+    <Content Include="Admin_assets\images\img1.png" />
+    <Content Include="Admin_assets\images\lock.png" />
+    <Content Include="Admin_assets\images\mail.png" />
+    <Content Include="Admin_assets\images\search-icon.png" />
+    <Content Include="Admin_assets\images\tick.png" />
+    <Content Include="Admin_assets\images\user.png" />
+    <Content Include="Admin_assets\images\weather.jpg" />
+    <Content Include="Admin_assets\js\amcharts.js" />
+    <Content Include="Admin_assets\js\bootstrap.js" />
+    <Content Include="Admin_assets\js\Chart.bundle.js" />
+    <Content Include="Admin_assets\js\Chart.js" />
+    <Content Include="Admin_assets\js\chartinator.js" />
+    <Content Include="Admin_assets\js\classie.js" />
+    <Content Include="Admin_assets\js\custom.js" />
+    <Content Include="Admin_assets\js\export.min.js" />
+    <Content Include="Admin_assets\js\index.js" />
+    <Content Include="Admin_assets\js\index1.js" />
+    <Content Include="Admin_assets\js\index2.js" />
+    <Content Include="Admin_assets\js\jquery-1.11.1.min.js" />
+    <Content Include="Admin_assets\js\jquery.flot.js" />
+    <Content Include="Admin_assets\js\jquery.jqcandlestick.min.js" />
+    <Content Include="Admin_assets\js\jquery.nicescroll.js" />
+    <Content Include="Admin_assets\js\light.js" />
+    <Content Include="Admin_assets\js\metisMenu.min.js" />
+    <Content Include="Admin_assets\js\modernizr.custom.js" />
+    <Content Include="Admin_assets\js\monthly.js" />
+    <Content Include="Admin_assets\js\owl.carousel.js" />
+    <Content Include="Admin_assets\js\pie-chart.js" />
+    <Content Include="Admin_assets\js\scripts.js" />
+    <Content Include="Admin_assets\js\serial.js" />
+    <Content Include="Admin_assets\js\SidebarNav.min.js" />
+    <Content Include="Admin_assets\js\SimpleChart.js" />
+    <Content Include="Admin_assets\js\utils.js" />
+    <Content Include="Admin_assets\js\validator.min.js" />
+    <Content Include="Admin_assets\lib\modernizr\modernizr-custom.html" />
+    <Content Include="Content\css\error.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\img\apple-touch-icon.png" />
+    <Content Include="Content\img\background.jpg" />
+    <Content Include="Content\img\favicon.png" />
+    <Content Include="Content\img\log.svg" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\portfolio\billing.png" />
+    <Content Include="Content\img\portfolio\complain.png" />
+    <Content Include="Content\img\portfolio\contact_form.png" />
+    <Content Include="Content\img\portfolio\emp_info.png" />
+    <Content Include="Content\img\portfolio\feedback.png" />
+    <Content Include="Content\img\portfolio\library_book_record.png" />
+    <Content Include="Content\img\portfolio\login_signup.png" />
+    <Content Include="Content\img\portfolio\std_reg.png" />
+    <Content Include="Content\img\portfolio\todo.png" />
+    <Content Include="Content\img\profile.jpg" />
+    <Content Include="Content\img\register.svg" />
+    <Content Include="Content\img\services.jpg" />
+    <Content Include="Content\js\app.js" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\newFile.js" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\vendor\aos\aos.cjs.js" />
+    <Content Include="Content\vendor\aos\aos.css" />
+    <Content Include="Content\vendor\aos\aos.esm.js" />
+    <Content Include="Content\vendor\aos\aos.js" />
+    <Content Include="Content\vendor\bootstrap-icons\bootstrap-icons.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendor\bootstrap-icons\bootstrap-icons.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\prb.txt" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\vendor\glightbox\css\glightbox.css" />
+    <Content Include="Content\vendor\glightbox\css\glightbox.min.css" />
+    <Content Include="Content\vendor\glightbox\js\glightbox.js" />
+    <Content Include="Content\vendor\glightbox\js\glightbox.min.js" />
+    <Content Include="Content\vendor\imagesloaded\imagesloaded.pkgd.min.js" />
+    <Content Include="Content\vendor\isotope-layout\isotope.pkgd.js" />
+    <Content Include="Content\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <Content Include="Content\vendor\php-email-form\validate.js" />
+    <Content Include="Content\vendor\purecounter\purecounter_vanilla.js" />
+    <Content Include="Content\vendor\swiper\swiper-bundle.min.css" />
+    <Content Include="Content\vendor\swiper\swiper-bundle.min.js" />
+    <Content Include="Content\vendor\typed.js\typed.cjs" />
+    <Content Include="Content\vendor\typed.js\typed.module.js" />
+    <Content Include="Content\vendor\typed.js\typed.umd.js" />
+    <Content Include="Content\vendor\waypoints\noframework.waypoints.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Login_assets\app.js" />
+    <Content Include="Login_assets\log.svg" />
+    <Content Include="Login_assets\Login &amp; Registration Form.png" />
+    <Content Include="Login_assets\register.svg" />
+    <Content Include="Login_assets\style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ChangePasswordController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\LandingPageController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202601231427065_UpdateContactMeSchema.cs" />
+    <Compile Include="Migrations\202601231427065_UpdateContactMeSchema.Designer.cs">
+      <DependentUpon>202601231427065_UpdateContactMeSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ChangePassword.cs" />
+    <Compile Include="Models\Contact_me.cs" />
+    <Compile Include="Models\DatabaseContext.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Reg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Content\vendor\aos\aos.js.map" />
+    <Content Include="Content\vendor\bootstrap-icons\bootstrap-icons.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendor\bootstrap-icons\bootstrap-icons.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendor\bootstrap-icons\fonts\bootstrap-icons.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Content\vendor\purecounter\purecounter_vanilla.js.map" />
+    <Content Include="Content\vendor\swiper\swiper-bundle.min.js.map" />
+    <Content Include="Content\vendor\typed.js\typed.cjs.map" />
+    <Content Include="Content\vendor\typed.js\typed.module.js.map" />
+    <Content Include="Content\vendor\typed.js\typed.umd.js.map" />
+    <Content Include="Admin_assets\fonts\fontawesome-webfont5b62.eot" />
+    <Content Include="Admin_assets\fonts\fontawesome-webfont5b62.ttf" />
+    <Content Include="Admin_assets\fonts\fontawesome-webfont5b62.woff" />
+    <Content Include="Admin_assets\fonts\fontawesome-webfont5b62.woff2" />
+    <Content Include="Admin_assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Admin_assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin_assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin_assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin_assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Admin_assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\LandingPage\Dashboard.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\LandingPage\Messages.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy10.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy11.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy2.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy3.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy4.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy5.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy6.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy7.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy8.pubxml" />
+    <None Include="Properties\PublishProfiles\Portfolioamit - Web Deploy9.pubxml" />
+    <Content Include="Views\ChangePassword\ChangePassword.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="assets\" />
+    <Folder Include="Views\Signup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202601231427065_UpdateContactMeSchema.resx">
+      <DependentUpon>202601231427065_UpdateContactMeSchema.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60718</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44365/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
