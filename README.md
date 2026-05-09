@@ -20,7 +20,7 @@ A modern and responsive **Personal Portfolio Website** built to showcase my skil
 * **HTML5**
 * **CSS3**
 * **JavaScript**
-* **Bootstrap (if used)**
+* **Bootstrap **
 
 ---
 
